@@ -1,0 +1,28 @@
+{
+  "name": "service-loja",
+  "version": "1.0.0",
+  "description": "Microservice loja",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odair/service-loja.git"
+  },
+  "author": "Odair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Odair/service-loja/issues"
+  },
+  "homepage": "https://github.com/Odair/service-loja#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}

@@ -3,35 +3,35 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Compra', {
-      id:{
+      id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      idPedido:{
+      idPedido: {
         type: Sequelize.INTEGER
       },
-      tempoDePreparo:{
+      tempoDePreparo: {
         type: Sequelize.INTEGER
       },
-      enderecoDestino:{
+      enderecoDestino: {
         type: Sequelize.TEXT
       },
-      dataParaEntrega:{
+      dataParaEntrega: {
         type: Sequelize.DATE
       },
-      voucher:{
+      voucher: {
         type: Sequelize.INTEGER
       },
-      state:{
+      state: {
         type: Sequelize.INTEGER
       },
-      created_at:{
+      createdAt: {
         type: Sequelize.DATE,
         allowNull: false
       },
-      updated_at:{
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false
       }

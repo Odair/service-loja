@@ -1,11 +1,12 @@
 module.exports = {
-    dialect:'mysql',
-    host:'localhost',
-    username:'root',
-    password:'mysql',
-    database:'lojaDb',
+    dialect: 'mysql',
+    host: `${process.env.MYSQL_HOST}`,
+    username: `${process.env.MYSQL_USER}`,
+    password: `${process.env.MYSQL_PASSWORD}`,
+    database: `${process.env.MYSQL_DB}`,
     define: {
-        timesstamps:true,
-        underscored: true
+        timesstamps: true,
+        underscored: false,
+        freezeTableName: true
     }
 }

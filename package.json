@@ -4,7 +4,7 @@
   "description": "Microservice loja",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon --inspect src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Odair/service-loja#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.4"

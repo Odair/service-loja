@@ -6,11 +6,11 @@ const compraState = require("../models/compraState");
 
 const realizaCompra = async (req, res) => {
 
-    const compra = new Compra(req.body);
+    const compra = req.body;
     compra.state = compraState.RECEBIDO;
-    await compraRepositorio.criarCompra(compra);
+    //await compraRepositorio.criarCompra(compra);
 
-    const infoFornecedor = await fornecedorServico.buscarFornecedorPorEstado(compra.estado);
+    const infoFornecedor = await fornecedorServico.buscarFornecedorPorEstado("MG");
     const infoPedido = await fornecedorServico.realizaPedido(compra.itens);
     compra.state = compraState.PEDIDO_REALIZADO;
     compra.idPedido = infoPedido.idPedido;
